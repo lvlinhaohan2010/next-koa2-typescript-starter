@@ -2,3 +2,6 @@ node_modules
 .next
 .DS_Store
 *.log
+api
+pages
+server.js
