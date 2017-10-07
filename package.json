@@ -1,0 +1,48 @@
+{
+  "name": "koa-next",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "ts_api": "tsc --project ./ts/api",
+    "server_api": "node api/index.js",
+    "dev_api": "concurrently \"tsc --watch --project ./ts/api\" \"nodemon api/index.js\"",
+    "ts_next": "tsc --project ./ts/pages",
+    "server_next": "next",
+    "dev_next": "npm run-script ts_next && concurrently \"tsc --watch --project ./ts/pages\" \"npm run-script server_next\"",
+    "start_next": "next start",
+    "ts": "concurrently \"tsc --project ./ts/pages\" \"tsc --project ./ts\"",
+    "server": "node server.js",
+    "dev": "concurrently \"tsc --watch --project ./ts/pages\" \"tsc --watch --project ./ts\" \"nodemon server.js\"",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "dependencies": {
+    "async-reactor": "^1.1.1",
+    "axios": "^0.15.3",
+    "koa": "^2.3.0",
+    "koa-bodyparser": "next",
+    "koa-compress": "^2.0.0",
+    "koa-convert": "^1.2.0",
+    "koa-cors": "^0.0.16",
+    "koa-logger": "^3.0.1",
+    "koa-router": "^7.2.1",
+    "next": "latest",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.0.39",
+    "@types/koa-bodyparser": "^3.0.25",
+    "@types/koa-compress": "^2.0.7",
+    "@types/koa-logger": "^2.0.2",
+    "@types/koa-router": "^7.0.23",
+    "@types/node": "^8.0.31",
+    "@types/react": "^16.0.5",
+    "concurrently": "^3.5.0",
+    "nodemon": "^1.12.1",
+    "typescript": "^2.5.2"
+  },
+  "author": "liulei",
+  "license": "ISC"
+}

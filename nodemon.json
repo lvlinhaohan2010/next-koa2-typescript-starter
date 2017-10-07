@@ -1,0 +1,21 @@
+{
+  "restartable": "rs",
+  "ignore": [
+    ".git",
+    ".next",
+    "node_modules/**/node_modules",
+    "ts/**/*",
+    "*.js.map"
+  ],
+  "execMap": {
+    "js": "node --harmony"
+  },
+  "watch": [
+    "api/**/*",
+    "server.js"
+  ],
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "ext": "js json"
+}

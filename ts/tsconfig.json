@@ -1,0 +1,11 @@
+{   "extends": "../tsconfig.base",
+    "compilerOptions": {
+        "outDir":"../"
+    },
+    "files": [
+        "server.ts"
+    ],
+    "exclude":[
+        "pages"
+    ]
+}
