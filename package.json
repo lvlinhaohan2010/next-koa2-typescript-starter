@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev_api": "concurrently \"tsc --watch --project ./ts\" \"nodemon dest/api/index.js\"",
+    "dev_api": "concurrently \"tsc --watch\" \"nodemon dest/api/index.js\"",
     "server_next": "next ./dest",
-    "dev_next": "tsc --project ./ts && concurrently \"tsc --watch --project ./ts\" \"npm run-script server_next\"",
+    "dev_next": "tsc && concurrently \"tsc --watch\" \"npm run-script server_next\"",
     "start_next": "next start ./dest",
-    "dev": "concurrently \"tsc --watch --project ./ts\" \"nodemon dest/server.js ./dest \"",
+    "dev": "concurrently \"tsc --watch\" \"nodemon dest/server.js ./dest \"",
     "build": "next build ./dest",
     "start": "NODE_ENV=production node dest/server.js ./dest"
   },

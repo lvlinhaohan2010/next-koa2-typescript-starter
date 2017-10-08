@@ -5,6 +5,10 @@
         "jsx": "react",
         "allowJs": true,
         "isolatedModules":true,
-        "outDir":"../dest/"
-    }
+        "rootDir": "ts",
+        "outDir": "dest"
+    },
+    "include": [
+        "ts/**/*"
+    ]
 }
