@@ -11,8 +11,8 @@
     "js": "node --harmony"
   },
   "watch": [
-    "api/**/*",
-    "server.js"
+    "dest/api/**/*",
+    "dest/server.js"
   ],
   "env": {
     "NODE_ENV": "development"

@@ -1,11 +1,10 @@
-{   "extends": "../tsconfig.base",
+{
     "compilerOptions": {
-        "outDir":"../"
-    },
-    "files": [
-        "server.ts"
-    ],
-    "exclude":[
-        "pages"
-    ]
+        "module": "commonjs",
+        "target": "es2015",
+        "jsx": "react",
+        "allowJs": true,
+        "isolatedModules":true,
+        "outDir":"../dest/"
+    }
 }

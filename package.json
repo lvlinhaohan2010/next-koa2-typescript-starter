@@ -4,18 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "ts_api": "tsc --project ./ts/api",
-    "server_api": "node api/index.js",
-    "dev_api": "concurrently \"tsc --watch --project ./ts/api\" \"nodemon api/index.js\"",
-    "ts_next": "tsc --project ./ts/pages",
-    "server_next": "next",
-    "dev_next": "npm run-script ts_next && concurrently \"tsc --watch --project ./ts/pages\" \"npm run-script server_next\"",
-    "start_next": "next start",
-    "ts": "concurrently \"tsc --project ./ts/pages\" \"tsc --project ./ts\"",
-    "server": "node server.js",
-    "dev": "concurrently \"tsc --watch --project ./ts/pages\" \"tsc --watch --project ./ts\" \"nodemon server.js\"",
-    "build": "next build",
-    "start": "NODE_ENV=production node server.js"
+    "dev_api": "concurrently \"tsc --watch --project ./ts\" \"nodemon dest/api/index.js\"",
+    "server_next": "next ./dest",
+    "dev_next": "tsc --project ./ts && concurrently \"tsc --watch --project ./ts\" \"npm run-script server_next\"",
+    "start_next": "next start ./dest",
+    "dev": "concurrently \"tsc --watch --project ./ts\" \"nodemon dest/server.js ./dest \"",
+    "build": "next build ./dest",
+    "start": "NODE_ENV=production node dest/server.js ./dest"
   },
   "dependencies": {
     "async-reactor": "^1.1.1",

@@ -1,6 +1,6 @@
 import * as React from 'react'
-import Head from './components/Head'
-import Link from './components/Link'
+import Head from '../components/Head'
+import Link from '../components/Link'
 import * as axios from 'axios';
 
 interface Props {
