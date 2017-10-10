@@ -1,7 +1,6 @@
 import * as React from 'react'
 import Head from '../components/Head'
 import Link from '../components/Link'
-import * as axios from 'axios';
 
 interface Props {
     data: string;
@@ -25,6 +24,7 @@ export default class extends React.Component<Props, {}> {
                 <div>
                     {this.props.data}
                 </div>
+                <Link href="/"><a>Goto Home page</a></Link>
              </div>
             )
     }

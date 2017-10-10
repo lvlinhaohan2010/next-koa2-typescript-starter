@@ -13,8 +13,6 @@
     "start": "NODE_ENV=production node dest/server.js ./dest"
   },
   "dependencies": {
-    "async-reactor": "^1.1.1",
-    "axios": "^0.15.3",
     "koa": "^2.3.0",
     "koa-bodyparser": "next",
     "koa-compress": "^2.0.0",
@@ -22,9 +20,9 @@
     "koa-cors": "^0.0.16",
     "koa-logger": "^3.0.1",
     "koa-router": "^7.2.1",
-    "next": "latest",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "next": "^4.0.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
   },
   "devDependencies": {
     "@types/koa": "^2.0.39",
